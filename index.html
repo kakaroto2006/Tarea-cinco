@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarea Cinco</title>
+  <style>
+    /* Metodología BEM y Flexbox */
+
+    /* Contenedor principal */
+    .tarea-cinco__container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Cada columna flex */
+    .tarea-cinco__column {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 30%;
+    }
+
+    /* Ítems, con fondo gris claro y centrados */
+    .tarea-cinco__item {
+      background-color: #e8e8e8;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      border-radius: 4px;
+    }
+
+    /* Columna izquierda con orden personalizado */
+    .tarea-cinco__column--left {
+      justify-content: flex-start;
+    }
+
+    .tarea-cinco__item--item5 {
+      order: 1;
+    }
+
+    .tarea-cinco__item--item3 {
+      order: 2;
+    }
+
+    /* Columna central */
+    .tarea-cinco__column--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Columna derecha con orden personalizado */
+    .tarea-cinco__column--right {
+      justify-content: flex-start;
+    }
+
+    .tarea-cinco__item--item4 {
+      order: 1;
+    }
+
+    .tarea-cinco__item--item1 {
+      order: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tarea-cinco__container">
+
+    <!-- Columna izquierda -->
+    <div class="tarea-cinco__column tarea-cinco__column--left">
+      <div class="tarea-cinco__item tarea-cinco__item--item5">Item 5</div>
+      <div class="tarea-cinco__item tarea-cinco__item--item3">Item 3</div>
+    </div>
+
+    <!-- Columna centro -->
+    <div class="tarea-cinco__column tarea-cinco__column--center">
+      <div class="tarea-cinco__item tarea-cinco__item--item2">Item 2</div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="tarea-cinco__column tarea-cinco__column--right">
+      <div class="tarea-cinco__item tarea-cinco__item--item4">Item 4</div>
+      <div class="tarea-cinco__item tarea-cinco__item--item1">Item 1</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
