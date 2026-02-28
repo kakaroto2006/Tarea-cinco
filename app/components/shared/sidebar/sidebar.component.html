@@ -1,0 +1,41 @@
+<aside class="h-screen w-64 bg-white shadow-md sticky top-0 
+                 grid grid-rows-[auto_1fr_auto]">
+
+  <!-- HEADER -->
+  <div class="p-6 border-b">
+    <h1 class="text-xl font-bold text-gray-800">
+      Portal Taxis
+    </h1>
+  </div>
+
+  <!-- BODY -->
+  <nav class="p-4 space-y-2 overflow-y-auto">
+    <a routerLink="/dashboard"
+       class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-black transition">
+       Dashboard
+    </a>
+
+    <a routerLink="/viajes"
+       class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-black transition">
+       Viajes
+    </a>
+
+    <a routerLink="/pasajeros"
+       class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-black transition">
+       Pasajeros
+    </a>
+
+    <a routerLink="/conductores"
+       class="block px-4 py-2 rounded-lg text-gray-700 hover:bg-gray-100 hover:text-black transition">
+       Conductores
+    </a>
+  </nav>
+
+  <!-- FOOTER -->
+  <div class="p-4 border-t">
+    <button class="w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition">
+      Cerrar sesión
+    </button>
+  </div>
+
+</aside>
